@@ -1,3 +1,3 @@
-FROM maven:3.6.1-jdk-12
+FROM maven:3.6.2-jdk-13
 
-RUN ln -s /usr/java/openjdk-12 /docker-java-home
+RUN ln -s /usr/java/openjdk-13 /docker-java-home
