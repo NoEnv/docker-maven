@@ -1,4 +1,4 @@
-FROM noenv/openjdk:14.0.2
+FROM noenv/openjdk:15.0.0
 
 ARG MAVEN_VERSION=3.6.3
 ARG USER_HOME_DIR="/root"
