@@ -13,7 +13,8 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/* /tmp/apache-maven.tar.gz \
   && cp -f /opt/maven/conf/settings.xml /drone/volume/ \
   && ln -s /opt/maven/bin/mvn /usr/bin/mvn \
-  && ln -s /drone/volume/settings.xml /root/.m2/
+  && ln -s /drone/volume/settings.xml /root/.m2/ \
+  && echo "JAVA_HOME=/docker-java-home" > /etc/mavenrc
 
 ENV MAVEN_HOME "/opt/maven"
 ENV MAVEN_CONFIG "/root/.m2"
