@@ -5,7 +5,7 @@ ARG SHA=0ec48eb515d93f8515d4abe465570dfded6fa13a3ceb9aab8031428442d9912ec20f066b
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries
 
 RUN apt-get update \
-  && apt-get install -y gnupg curl procps \
+  && apt-get install -y gnupg curl procps zip \
   && mkdir -p /opt/maven /root/.m2 /drone/volume \
   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c - \
