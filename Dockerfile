@@ -1,7 +1,7 @@
-FROM noenv/openjdk:26.0.0
+FROM noenv/openjdk:25.0.3
 
-ARG MAVEN_VERSION=3.9.14
-ARG SHA=d50af8ab5e6005b46a07f0ce9d3719e67cfdf898da988a84871304cd59fb1af0fef2f99dea709e6e66f21f732f905979b5c2dce6b6860406f60a70e84d9cf0b8
+ARG MAVEN_VERSION=3.9.15
+ARG SHA=33d81e0ec785f0207e3e5e3ffb61863e1dca5784c15ac3fb5ff105f69cffbea484eb8d473ea60467a63f7b0570eef8622f2fed8eee96acbe668aa313391cddb3
 ARG BASE_URL=https://dlcdn.apache.org/maven/maven-3/${MAVEN_VERSION}/binaries
 
 RUN apt-get update \
