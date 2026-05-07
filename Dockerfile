@@ -1,4 +1,4 @@
-FROM noenv/openjdk:25.0.3
+FROM noenv/openjdk:26.0.1
 
 ARG MAVEN_VERSION=3.9.15
 ARG SHA=33d81e0ec785f0207e3e5e3ffb61863e1dca5784c15ac3fb5ff105f69cffbea484eb8d473ea60467a63f7b0570eef8622f2fed8eee96acbe668aa313391cddb3
